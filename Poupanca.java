@@ -1,6 +1,6 @@
-package ExemploBanco;
-
 public class Poupanca extends Conta {
+        private double saldo;
+
     
     public Poupanca (String numero){
         super(numero);
@@ -10,6 +10,14 @@ public class Poupanca extends Conta {
         double rendimento;
         rendimento = this.getSaldo() * juros;
         this.creditar(rendimento);
+    }
+
+    void creditar(double valor){
+        this.saldo += valor;
+    }
+
+    public double getSaldo(){
+        return this.saldo;
     }
 
 }
