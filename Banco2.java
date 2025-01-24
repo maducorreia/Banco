@@ -1,5 +1,3 @@
-package ExemploBanco;
-
 import java.util.ArrayList;
 
 public class Banco2 {
@@ -11,6 +9,12 @@ public class Banco2 {
 
     public void adicionarConta(Conta conta){
         contas.add(conta);
+    
+    }
+
+     public void removerConta(Conta conta){
+        contas.remove(conta);
+    
     }
 
     @Override
