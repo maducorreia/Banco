@@ -1,8 +1,6 @@
-package ExemploBanco;
-
 
 public class ContaEspecial extends Conta{
-
+    private double saldo;
     private double limite;
 
     public ContaEspecial(String numero, double limite){
